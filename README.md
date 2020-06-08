@@ -42,7 +42,7 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
  A geometria apresentada abaixo representa a região do escoamento do fluido.
  
 <p align="center">
-  <img width="600" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistaiso.jpg">
+  <img width="550" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistaiso.jpg">
 </p>
 
  
