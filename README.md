@@ -44,7 +44,21 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
 <p align="center">
   <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistaiso.jpg">
 </p>
+<p align="center">
+  <b>Figura 1- Vista Isométrica da geometria</b>
+</p>
 
- 
-         
-     
+<p align="center">
+  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem1_vistal_lateral.jpg">
+</p>
+<p align="center">
+  <b>Figura 2- Vista lateral da geometria</b>
+</p>
+
+<p align="center">
+  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistafrontal.jpg">
+</p>
+<p align="center">
+  <b>Figura 3- Vista frontal da geometria</b>
+</p>
+
