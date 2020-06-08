@@ -41,6 +41,8 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
  
  A geometria apresentada abaixo representa a região do escoamento do fluido.
  
+ ![Figura 1 - Vista isométrica da geometria](https://user-images.githubusercontent.com/66124032/83987011-2e097300-a915-11ea-8d6d-10757e42cec2.jpg)
+
  
          
      
