@@ -16,7 +16,7 @@ Problema 1: Uma instalação de bombeamento tem apresentado problemas em uma se�
 O objetivo geral do presente projeto é a análise do escoamento de um fluido na tubulação de um bombeamento, que apresenta 40 mm de diâmetro e 1 metro de comprimento, através da simulação numérica utilizando o software Ansys Fluent. Tal análise permitirá avaliar parâmetros do escoamento como: Vazão e a perda de carga. Bem como, possíveis problemas na instalação, implementação de otimizações, e modificações caso os resultados não apresentem coerência com os valores citados pelo problema.
   
   ### 1.2 Requisitos de Solução
-O projeto tem como requisito apresentar um estudo quantitativo, comparando as simulações com os dados experimentais dados pelo problema, assim, analisando se os valores apresentados de perda de carga e vazão volumértica concordam entre si. Também, será realizado um estudo paramétrico sobre a velocidade máxima do escoamento na tubulação.
+O projeto tem como requisito apresentar um estudo quantitativo, comparando as simulações com os dados experimentais dados pelo problema, assim, analisando se os valores apresentados de perda de carga e vazão volumértica concordam entre si. Também, será realizado um estudo paramétrico baseado na velocidade máxima do escoamento na tubulação.
   
   ### 1.3 Finalidade do Projeto
   O projeto possui finalidade acadêmica, ou seja, prevê o auxílio à disciplina de Dinâmica dos fluidos, por meio do estudo da Fluidodinâmica Computacional (CFD), muito utilizado na academia e na indústria atual. Tal ferramenta possibilita o aumento da eficiência, da segurança de processos, além da redução dos custos de produção.
@@ -32,7 +32,7 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
  
  - Tubulação não apresenta conexões.
  
- Caso os resultados da simulação não sejam coerentes com os resultados experimentais, a simplificação quanto rugosidade do material poderá ser desconsiderada. 
+ Caso os resultados da simulação não sejam coerentes com os resultados experimentais, algumas dessas simplificações poderão ser desconsideradas. 
 
   
   ### 1.5 Precisão dos Resultados 
