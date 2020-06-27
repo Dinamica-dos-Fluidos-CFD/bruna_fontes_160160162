@@ -49,7 +49,7 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
  A geometria apresentada abaixo representa a região do escoamento do fluido.
  
 <p align="center">
-  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistaiso.jpg">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistaiso.jpg">
 </p>
 <p align="center">
   <b>Figura 1- Vista Isométrica da geometria</b>
@@ -58,7 +58,7 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
 
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem1_vistal_lateral.jpg">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem1_vistal_lateral.jpg">
 </p>
 <p align="center">
   <b>Figura 2- Vista lateral da geometria</b>
@@ -66,7 +66,7 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
 
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistafrontal.jpg">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/problem_1_vistafrontal.jpg">
 </p>
 <p align="center">
   <b>Figura 3- Vista frontal da geometria</b>
@@ -74,9 +74,64 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
 
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/Inlet.png">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/Inlet.png">
 </p>
 <p align="center">
   <b>Figura 4- Esquemático da geometria</b>
 </p>
+
+## 2. Pré-Processamento
+
+## 2.1 Domínio e Geometria
+No CFD o domínio representa a região a qual será feita o cálculo, essa região contínua é discretizada por uma malha que representa pequenos volumes de controle. A fim de facilitar o processamento é importante deixar a malha simplificada, livre de chanfros, curvaturas, desconsiderando elementos geométricos supérfluos para não agregar elementos de malha sujos. Portanto esse processo é demorado e de extrema importância para garantir a aproximação do fenômeno físico. Para o projeto, o domínio do cálculo está sendo representado apenas pelo diâmetro interno da tubulação onde está ocorrendo o escoamento do fluido, tornando a geometria adequada para a simulação.
+
+## 2.2 Malha
+A qualidade da malha para estudo CFD é de extrema importância para obtenção de bons resultados. Devido à baixa complexidade do problema, e por apresentar uma geometria de domínio simples, será utilizada uma malha estruturada. Além disso, por se tratar de simulações CFD o método dos volumes finitos (FVM) é utilizado.
+
+Para a abordagem inicial do problema, a malha foi gerada automaticamente pelo “Genarate mesh”, caso necessário, outros métodos serão utilizados.
+
+<p align="center">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/generate_mesh.png">
+</p>
+<p align="center">
+  <b>Figura 5 - Gerando malha automática</b>
+</p>
+
+
+
+<p align="center">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/malha_automatica.png">
+</p>
+<p align="center">
+  <b>Figura 6 - Malha do Cálculo</b>
+</p>
+
+
+A fim de avaliar a qualidade da malha para a precisão dos resultados serão usados os parâmetros Skewness e Ortogonal.
+
+<p align="center">
+  <img width="450" height="270" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/skewness_metric.png">
+</p>
+<p align="center">
+  <b>Figura 7 - Métrica Skewness da malha</b>
+</p>
+
+
+<p align="center">
+  <img width="450" height="270" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/ortogonal_metric.png">
+</p>
+<p align="center">
+  <b>Figura 8 - Métrica Ortogonal da malha</b>
+</p>
+
+Aqui também, foram definidas a entrada e saída da tubulação. 
+
+<p align="center">
+  <img width="470" height="300" src="">
+</p>
+<p align="center">
+  <b>Figura 8 - Métrica Ortogonal da malha</b>
+</p>
+
+### 2.3 SETUP
 
