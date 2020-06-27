@@ -132,7 +132,7 @@ Aqui, ainda são estabelecidas as regiões de contorno do problema (entrada e sa
   <img width="550" height="370" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/create_outlet.png">
 </p>
 
-- Não é necessário criar definir a região de parede, o Fluent automaticamente seleciona como parede as regiões do domínio que não foram selecionadas.
+- Não é necessário definir a região de parede, o Fluent automaticamente seleciona como parede as regiões do domínio que não foram selecionadas.
  
 
 
