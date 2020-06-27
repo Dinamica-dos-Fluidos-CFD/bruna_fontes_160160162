@@ -124,14 +124,26 @@ A fim de avaliar a qualidade da malha para a precisão dos resultados serão usa
   <b>Figura 8 - Métrica Ortogonal da malha</b>
 </p>
 
-Aqui também, foram definidas a entrada e saída da tubulação. 
+Aqui, ainda são estabelecidas as regiões de contorno do problema (entrada e saída):
+
+- Selecionar-se a face de interesse com o botão direito do mouse:
 
 <p align="center">
-  <img width="470" height="300" src="">
+  <img width="550" height="370" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/create_outlet.png">
 </p>
-<p align="center">
-  <b>Figura 8 - Métrica Ortogonal da malha</b>
-</p>
+
+- Não é necessário criar definir a região de parede, o Fluent automaticamente seleciona como parede as regiões do domínio que não foram selecionadas.
+ 
+
+
 
 ### 2.3 SETUP
+
+Após feita a geração da malha é possível dar início ao setup do problema. Mas antes, é necessário estabelecer os parâmetros que serão inseridos nas condições de contornos. Essas informações do problema servirão de referência para inicializar a solução:
+
+- Vazão volumétrica de saída: 0,0001 m³/s
+- Pressão estática na saída: 0 Pa (pressão relativa)
+- Velocidade na entrada: 0,0795 m/s
+A velocidade na entrada foi calculada pela a vazão fornecida no problema através da equação da continuidade. 
+
 
