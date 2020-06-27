@@ -82,10 +82,10 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
 
 ## 2. Pré-Processamento
 
-## 2.1 Domínio e Geometria
+### 2.1 Domínio e Geometria
 No CFD o domínio representa a região a qual será feita o cálculo, essa região contínua é discretizada por uma malha que representa pequenos volumes de controle. A fim de facilitar o processamento é importante deixar a malha simplificada, livre de chanfros, curvaturas, desconsiderando elementos geométricos supérfluos para não agregar elementos de malha sujos. Portanto esse processo é demorado e de extrema importância para garantir a aproximação do fenômeno físico. Para o projeto, o domínio do cálculo está sendo representado apenas pelo diâmetro interno da tubulação onde está ocorrendo o escoamento do fluido, tornando a geometria adequada para a simulação.
 
-## 2.2 Malha
+### 2.2 Malha
 A qualidade da malha para estudo CFD é de extrema importância para obtenção de bons resultados. Devido à baixa complexidade do problema, e por apresentar uma geometria de domínio simples, será utilizada uma malha estruturada. Além disso, por se tratar de simulações CFD o método dos volumes finitos (FVM) é utilizado.
 
 Para a abordagem inicial do problema, a malha foi gerada automaticamente pelo “Genarate mesh”, caso necessário, outros métodos serão utilizados.
