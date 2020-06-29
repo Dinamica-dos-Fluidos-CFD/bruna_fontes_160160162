@@ -170,7 +170,8 @@ Definido os parametros é possível dar início ao SETUP do problema.
 - Definir água como o fluido de trabalho com as condições de acordo com a temperatura de 25 °C:
 
 <p align="center">
-  <img width="620" height="340" scr="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/material.png">
+  <img width="620" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/material.png">
 </p>
+
 
 
