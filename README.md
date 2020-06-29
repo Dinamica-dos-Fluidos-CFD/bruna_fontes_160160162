@@ -144,6 +144,33 @@ Após feita a geração da malha é possível dar início ao setup do problema. 
 - Vazão volumétrica de saída: 0,0001 m³/s
 - Pressão estática na saída: 0 Pa (pressão relativa)
 - Velocidade na entrada: 0,0795 m/s
+
 A velocidade na entrada foi calculada pela a vazão fornecida no problema através da equação da continuidade. 
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_continuidade.gif)
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/vazao_2.gif)
+
+Sendo,
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/area1.gif)
+
+Assim,
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/vel_1.gif)
+
+
+Definido os parametros é possível dar início ao SETUP do problema.
+
+- Primeiramente, define-se o modelo do problema. Nessa área, é possível ativar todas as equações de transporte que deseja-se usar. No caso, será ativado o modelo da viscosidade (laminar), e também o da energia, afim de, especificar a temperatura do fluido no escoamento.
+<p align="center">
+  <img width="550" height="370" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/models.png">
+</p>
+
+- Definir água como o fluido de trabalho:
+
+<p align="center">
+  <img width="600" height="320" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fluido_agua.png">
+</p>
 
 
