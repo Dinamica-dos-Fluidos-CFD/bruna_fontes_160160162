@@ -173,7 +173,7 @@ Definido os parametros é possível dar início ao SETUP do problema.
   <img width="620" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/material.png">
 </p>
 
-**CONTINUA**
+**CONTINUA...**
 
 
 
