@@ -178,11 +178,9 @@ Definido os parametros é possível dar início ao SETUP do problema.
   **#Entrada:**
   Velocidade do escomamento 
   
-  
-<p align="center">
-  <img width="630" height="340" src="hhttps://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/inlet_velocidade.png">
+  <p align="center">
+  <img width="650" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/inlet_velocidade.png">
 </p>
-
 
 
 
