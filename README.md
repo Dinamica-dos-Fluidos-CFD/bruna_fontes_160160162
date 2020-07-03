@@ -175,11 +175,20 @@ Definido os parametros é possível dar início ao SETUP do problema.
 
 - Definir as condições de contorno
   
-  **#Entrada:**
-  Velocidade do escomamento 
+  **#Input 1:Velocidade do escoamento**
+
+A velocidade de 0,0795 m/s calculada acima é um dos parâmetros de entrada. 
   
   <p align="center">
   <img width="650" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/inlet_velocidade.png">
+</p>
+
+**#Input 2: Pressão na saída**
+
+Por último, a pressão na saída de 0 Pa foi determinada com o intuito de facilitar o cálculo da perda de carga. Assim, o valor da pressão na entrada calculado na simulação, será a queda de pressão.
+
+ <p align="center">
+  <img width="650" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/Outlet_pressure.png">
 </p>
 
 
