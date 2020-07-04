@@ -107,13 +107,13 @@ Para a abordagem inicial do problema, a malha foi gerada automaticamente pelo �
 </p>
 
 
-A fim de avaliar a qualidade da malha para a precisão dos resultados serão usados os parâmetros Skewness e Ortogonal.
+A fim de avaliar a qualidade da malha para a precisão dos resultados serão usados os parâmetros Dissimetria e Ortogonal.
 
 <p align="center">
   <img width="450" height="270" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/skewness_metric.png">
 </p>
 <p align="center">
-  <b>Figura 7 - Métrica Skewness da malha</b>
+  <b>Figura 7 - Métrica Dissimetria da malha</b>
 </p>
 
 
@@ -192,7 +192,34 @@ Por último, a pressão na saída de 0 Pa foi determinada com o intuito de facil
 </p>
 
 
-**CONTINUA...**
+- Definir método de solução: No presente caso, está sendo utilizado o padrão do FLUENT
+
+<p align="center">
+<img width="500" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/metodos_solucao.png">
+</p>
+
+- Definir resíduos para controlar a convergência do caso: Aqui está sendo adotado o erro residual de 10^-4
 
 
+<p align="center">
+<img width="560" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo.png">
+</p>
+
+- Definir o número de itereções para iniciar a simulação:
+
+<p align="center">
+<img width="520" height="340" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/calculation.png">
+</p>
+
+
+### Recursos Computacionais
+Os recursos computacionais disponíveis para a realização da simulação encontram-se abaixo:
+
+|Item               |Especificações              |
+|-------------------|----------------------------|
+|Sistema Operacional|Microsoft Windows 10 Home   |
+|Processador        |Intel Core i5-6200U 2.30GHz |
+|Memória RAM        |8GB                         |
+
+Por fim, de acordo com os recursos computacionais, é previsto que o processamento seja realizado em um período de uma semana e que, após revisões, a etapa de pré-processamento e processamento seja concluída em um total de duas semanas.
 
