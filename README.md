@@ -83,7 +83,7 @@ O projeto tem como requisito apresentar um estudo quantitativo, comparando as si
 ## 2. Pré-Processamento
 
 ### 2.1 Domínio e Geometria
-No CFD o domínio representa a região a qual será feita o cálculo, essa região contínua é discretizada por uma malha que representa pequenos volumes de controle. A fim de facilitar o processamento é importante deixar a malha simplificada, livre de chanfros, curvaturas, desconsiderando elementos geométricos supérfluos para não agregar elementos de malha sujos. Portanto esse processo é demorado e de extrema importância para garantir a aproximação do fenômeno físico. Para o projeto, o domínio do cálculo está sendo representado apenas pelo diâmetro interno da tubulação onde está ocorrendo o escoamento do fluido, tornando a geometria adequada para a simulação.
+No CFD o domínio representa a região a qual será feita o cálculo, essa região contínua é discretizada por uma malha que representa pequenos volumes de controle. A fim de facilitar o processamento é importante deixar a malha simplificada, livre de chanfros, curvaturas, desconsiderando elementos geométricos supérfluos para não haver regiões com excesso de elementos de malha desnecessários. Portanto esse processo é demorado e de extrema importância para garantir a aproximação do fenômeno físico. Para o projeto, o domínio do cálculo está sendo representado apenas pelo diâmetro interno da tubulação onde está ocorrendo o escoamento do fluido, tornando a geometria adequada para a simulação.
 
 ### 2.2 Malha
 A qualidade da malha para estudo CFD é de extrema importância para obtenção de bons resultados. Devido à baixa complexidade do problema, e por apresentar uma geometria de domínio simples, será utilizada uma malha estruturada. Além disso, por se tratar de simulações CFD o método dos volumes finitos (FVM) é utilizado.
@@ -107,7 +107,7 @@ Para a abordagem inicial do problema, a malha foi gerada automaticamente pelo �
 </p>
 
 
-A fim de avaliar a qualidade da malha para a precisão dos resultados serão usados os parâmetros Dissimetria e Ortogonal.
+A fim de avaliar a qualidade da malha para a precisão dos resultados serão usados os parâmetros de Dissimetria e qualidade Ortogonal.
 
 <p align="center">
   <img width="450" height="270" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/skewness_metric.png">
@@ -121,7 +121,7 @@ A fim de avaliar a qualidade da malha para a precisão dos resultados serão usa
   <img width="450" height="270" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/ortogonal_metric.png">
 </p>
 <p align="center">
-  <b>Figura 8 - Métrica Ortogonal da malha</b>
+  <b>Figura 8 - Qualidade Ortogonal da malha</b>
 </p>
 
 Aqui, ainda são estabelecidas as regiões de contorno do problema (entrada e saída):
