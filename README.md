@@ -223,3 +223,34 @@ Os recursos computacionais disponíveis para a realização da simulação encon
 
 Por fim, de acordo com os recursos computacionais, é previsto que o processamento seja realizado em um período de uma semana e que, após revisões, a etapa de pré-processamento e processamento seja concluída em um total de duas semanas.
 
+
+## 3. Processamento Preliminar 
+
+
+## 3.1 Convergência 
+
+Primeiramente, foi definido o critério de convergência residual de 1e-4, obtendo a convergência com  880 iterações em 1 minuto e 15 segundos. E depois, a fim de analisar alguma melhora nos resultados,  foi adotado o critério de convergência residual de 1e-6, o qual convergiu a 980 iterações em 1 minuto e 28 segundos. De qualquer forma, ambos apresentaram um histórico de convergência dos resultados adequado.
+
+<p align="center">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo_4.jpg">
+</p> <p align="center">
+  <b> Figura 9 - Convergência residual a 1e-4 </b>
+  </p>
+
+
+<p align="center">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo_6.jpg">
+</p> 
+<p align="center">
+ <b> Figura 10 - Convergência residual a 1e-6 </b>
+  </p>
+  
+  ## 4. Pós-Processamento Preliminar 
+  
+  A fim de avaliar os resultados qualitativos e quantitativos das simulações cálculos teóricos foram realizados. 
+  
+  
+  ### 4.1 Resultados Teóricos 
+  
+  
+
