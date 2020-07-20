@@ -313,11 +313,21 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
 É possível observar pelos resultados do contorno de velocidade Fig. 12, e o perfil de velocidade Fig.14 que não há indicíos de um escoamento laminar, uma vez que, o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação, e o perfil de velocidade não apresenta o formato parabólico característico de um escoamento laminar, como mostra a figura abaixo.
 
  <p align="center">
-  <img width="300" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil%20laminar.png">
+  <img width="250" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil%20laminar.png">
 </p> 
 <p align="center">
   <b>Figura 15- Perfil de Velocidade escoamento laminar</b>
 </p>
+
+Na imagem abaixo é possível verificar que o perfil de velocidade do problema se assemelha ao perfil de um escoamento turbulento, onde os gradientes de velocidade na região da parede são maiores, semelhante ao formato de um chapéu.
+
+ <p align="center">
+  <img width="300" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil_turbulento.png">
+</p> 
+<p align="center">
+  <b>Figura 16- Perfil de Velocidade escoamento turbulento</b>
+</p>
+
 
 Ainda, é possível visualizar uma discordância nos resultados de perda de carga da simulação igual a 100,75% em comparação ao resultado teórico para o escoamento laminar, sendo um erro maior que a margem aceitável de 10%. 
 
@@ -338,7 +348,7 @@ Então foi realizado o estudo paramétrico da velocidade máxima do escoamento c
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/estudo_paramatrico_velocidade.png">
 </p> 
 <p align="center">
-  <b>Figura 16- Estudo paramétrico velocidade máxima e perda de carga</b>
+  <b>Figura 17- Estudo paramétrico velocidade máxima e perda de carga</b>
 </p>
 
 De acordo com as informações expostas acima, pode-se concluir que o modelo de equacionamento laminar para o problema da tubulação não é apropriado devido:
