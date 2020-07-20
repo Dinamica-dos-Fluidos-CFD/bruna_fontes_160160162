@@ -224,7 +224,7 @@ Os recursos computacionais disponíveis para a realização da simulação encon
 Por fim, de acordo com os recursos computacionais, é previsto que o processamento seja realizado em um período de uma semana e que, após revisões, a etapa de pré-processamento e processamento seja concluída em um total de duas semanas.
 
 
-## 3. Processamento Preliminar 
+## 3. Processamento Laminar
 
 
 ### 3.1 Convergência 
@@ -245,7 +245,7 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
  <b> Figura 10 - Convergência residual a 1e-6 </b>
   </p>
   
-  ## 4. Pós-Processamento Preliminar 
+  ## 4. Pós-Processamento Laminar
   
   A fim de avaliar os resultados qualitativos e quantitativos das simulações, os seguintes cálculos teóricos serão realizados: 
   
@@ -265,17 +265,51 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
  
   **# Perda de Carga**
   
-  A fim de estimar o fator de atrito para o cálculo da perda de carga, será utilizado o Diagrama de Moody. No diagrama será tomado como refrência a linha que indica tubulações lisas visto que não foi adotado nenhum material na simulação, e também o número de Reynolds já cálculado.
+ Para o cálculo da perda de carga deve ser calculado o fator de atrito
+ 
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_atrito_laminar.gif)
+ 
+ Assim, 
+ 
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/queda_pressao_laminar.gif)
+ 
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_de_atrito.gif)
+  ### 4.1 Resultados das Simulações
   
-  Assim,
+  <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/quedapressao.jpg">
+</p> 
+<p align="center">
+  <b>Figura 11 - contorno de pressão</b>
+</p>
+
+ <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/velocity.png">
+</p> 
+<p align="center">
+  <b>Figura 12 - contorno de velocidade</b>
+</p>
+
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perda_de_carga_teorica.gif)
+  <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perdadecargal.png">
+</p> 
+<p align="center">
+  <b>Figura 13 - Perda de Carga</b>
+</p>
+
+   
+  <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfeilvel.png">
+</p> 
+<p align="center">
+  <b>Figura 14- Perfil de Velocidade</b>
+</p>
+
   
+### 4.2 Discussão 
+
   
-  
-  ### 4.1 Resultados Qualitativos e Quantitativos 
   
   
 
