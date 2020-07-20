@@ -227,7 +227,7 @@ Por fim, de acordo com os recursos computacionais, é previsto que o processamen
 ## 3. Processamento Preliminar 
 
 
-## 3.1 Convergência 
+### 3.1 Convergência 
 
 Primeiramente, foi definido o critério de convergência residual de 1e-4, obtendo a convergência com  880 iterações em 1 minuto e 15 segundos. E depois, a fim de analisar alguma melhora nos resultados,  foi adotado o critério de convergência residual de 1e-6, o qual convergiu a 980 iterações em 1 minuto e 28 segundos. De qualquer forma, ambos apresentaram um histórico de convergência dos resultados adequado.
 
@@ -247,10 +247,35 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   
   ## 4. Pós-Processamento Preliminar 
   
-  A fim de avaliar os resultados qualitativos e quantitativos das simulações cálculos teóricos foram realizados. 
+  A fim de avaliar os resultados qualitativos e quantitativos das simulações, os seguintes cálculos teóricos serão realizados: 
+  
+  **# Número de Reynolds**
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds.gif)  
+  
+  Sendo,
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/visc_din_agua_25.gif)
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/massa_esp_agua_25.gif)
+  
+  Então,
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds_result.gif)
+ 
+  **# Perda de Carga**
+  
+  A fim de estimar o fator de atrito para o cálculo da perda de carga, será utilizado o Diagrama de Moody. No diagrama será tomado como refrência a linha que indica tubulações lisas visto que não foi adotado nenhum material na simulação, e também o número de Reynolds já cálculado.
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_de_atrito.gif)
+  
+  Assim,
+  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perda_de_carga_teorica.gif)
   
   
-  ### 4.1 Resultados Teóricos 
+  
+  ### 4.1 Resultados Qualitativos e Quantitativos 
   
   
 
