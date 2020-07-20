@@ -319,7 +319,7 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   <b>Figura 15- Perfil de Velocidade escoamento laminar</b>
 </p>
 
-Ainda, é possível visualizar uma discordância nos resultados de perda de carga da simulação igual a 100,75% em comparação ao resultado teórico para o escoamento laminar.
+Ainda, é possível visualizar uma discordância nos resultados de perda de carga da simulação igual a 100,75% em comparação ao resultado teórico para o escoamento laminar, sendo um erro maior que a margem aceitável de 10%. 
 
 |Perda de Carga   | (Pa)               |
 |-----------------|--------------------|
@@ -327,3 +327,7 @@ Ainda, é possível visualizar uma discordância nos resultados de perda de carg
 | Teórica Laminar |    1.34            |
 | Simulação       |    2.69            |
 
+
+Foi realizado o estudo parametrico em relação a velocidade máxima do escoamento. De acordo com a teoria do escoamento laminar em tubos a seguinte relação deve ser  
+
+**Continua...**
