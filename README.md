@@ -328,6 +328,26 @@ Ainda, é possível visualizar uma discordância nos resultados de perda de carg
 | Simulação       |    2.69            |
 
 
-Foi realizado o estudo parametrico em relação a velocidade máxima do escoamento. De acordo com a teoria do escoamento laminar em tubos a seguinte relação deve ser  
+De acordo com a teoria do escoamento laminar em tubos a seguinte relação deve ser verificada:
 
-**Continua...**
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_velocidade_maxima.gif)
+
+Então foi realizado o estudo paramétrico da velocidade máxima do escoamento com o intuito de avaliar se a relação acima era verificada. E também, do comportamento da queda de pressão. Após avaliar que a relação da velocidade máxima não condizia com a teoria, e os valores de queda de pressão permaneciam destoantes, concluiu-se que a tubulação apresenta algum problema.
+
+<p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/estudo_paramatrico_velocidade.png">
+</p> 
+<p align="center">
+  <b>Figura 16- Estudo paramétrico velocidade máxima e perda de carga</b>
+</p>
+
+De acordo com as informações expostas acima, pode-se concluir que o modelo de equacionamento laminar para o problema da tubulação não é apropriado devido:
+
+- Número de Reynolds indica um escoamento em transição
+
+- Perfil de velocidade da simulação não caracteriza um escoamento laminar
+
+- O resultado de perda de carga não é validado pelo valor do resultado teórico.
+
+Dessa maneira, será necessário um novo processamento considerando o equacionamento de um escoamento turbulento.
+
