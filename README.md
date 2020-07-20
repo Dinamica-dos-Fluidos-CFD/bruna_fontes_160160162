@@ -310,6 +310,15 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
 ### 4.2 Discussão 
 
   
-  
-  
+É possível observar pelos resultados do contorno de velocidade Fig. 12, e o perfil de velocidade Fig.14 que não há indicíos de um escoamento laminar, uma vez que, o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação, e o perfil de velocidade não apresenta o formato parabólico como é descrito na realidade física de um escoamento laminar como mostra a figura abaixo.
+
+ <p align="center">
+  <img width="300" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil%20laminar.png">
+</p> 
+<p align="center">
+  <b>Figura 15- Perfil de Velocidade escoamento laminar</b>
+</p>
+
+
+Continua...
 
