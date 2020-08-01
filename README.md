@@ -353,7 +353,7 @@ Abaixo, o estudo parmétrico do problema:
   <b>Figura 17- Estudo paramétrico </b>
 </p>
 
-É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, visto que a velocidade máxima em todas as variáveis não apresentou o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordada com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média da tubulação. 
+É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, visto que a velocidade máxima em todas as variáveis não apresentou o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordada com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média na tubulação. 
 
 De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tubos, pode-se pontuar os seguintes problemas:
 
@@ -367,6 +367,6 @@ De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tu
 
 
 
-Dessa maneira, conclui-se que o modelo laminar para o problema acima não é adequado, sendo necessário um novo processamento considerando o modelo turbulento. 
+Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo turbulento. 
 
 
