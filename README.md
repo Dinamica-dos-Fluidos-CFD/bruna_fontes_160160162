@@ -353,9 +353,9 @@ Abaixo, o estudo parmétrico do problema:
   <b>Figura 17- Estudo paramétrico velocidade máxima e perda de carga</b>
 </p>
 
-É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com a teoria, já que a velocidade máxima em todas as variáveis não foi o dobro da velocidade média do escoamento. Também, foi observado que a queda de pressão no tubo apenas condiz com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média da tubulação. (Dessa maneira conclui-se que existe algum problema na instalção ou no instrumento de medição.)
+É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, já que a velocidade máxima em todas as variáveis não foi o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordado com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média da tubulação. 
 
-De acordo com a teoria do escoamento laminar, e com os resultados da simulção expostos acima, pode observar que:
+De acordo com a teoria do escoamento laminar, e com a discussão da simulção expostos acima, pode-se observar que:
 
 - Há problemas na medição do equipamento ou estruturais na tubulação;
 
@@ -363,7 +363,7 @@ De acordo com a teoria do escoamento laminar, e com os resultados da simulção 
 
 - O Perfil de velocidade não é parabólico como em um escoamento laminar;
 
-- O resultado da perda de carga não condiz com o valor teórico laminar, e nem com os valor apresentado pelo problema, exceto se houver redução na velocidade do escoamento.
+- O resultado da perda de carga não condiz com o valor teórico laminar, e nem com o valor apresentado pelo problema, exceto, se houver redução na velocidade do escoamento.
 
 Conclui-se então, que é necessário um novo processamento considerando o equacionamento para o escoamento turbulento.
 
