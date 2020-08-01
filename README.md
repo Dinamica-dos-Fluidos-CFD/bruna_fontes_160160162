@@ -367,8 +367,8 @@ De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tu
 
 
 
-Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo turbulento. 
+Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo em transição. 
 
-## Pós-Processamento Turbulento
+## Processamento Turbulento
 
 
