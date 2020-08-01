@@ -339,7 +339,7 @@ Ainda, é possível visualizar uma discordância nos resultados de perda de carg
 
 Foi realizado o estudo parametrico da velocidade máxima, a fim de, avaliar se a teoria sobre o escoamento laminar condiz com o problema analisado. E também, para verificar o comportamento da velocidade do escoamento e da perda de carga.
 
-A seguinte relação da velocidade máxima deve ser verificada para o escoamento laminar:
+A seguinte relação da velocidade máxima deve ser verificada para o escoamento laminar, para perfis parabólicos:
 
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_velocidade_maxima.gif)
