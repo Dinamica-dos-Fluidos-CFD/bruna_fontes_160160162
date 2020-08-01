@@ -310,7 +310,7 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
 ### 4.2 Discussão 
 
   
-É possível observar pelos resultados do contorno de velocidade Fig. 12, e o perfil de velocidade Fig.14 que não há indicíos de um escoamento laminar, uma vez que, o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação, e o perfil de velocidade não apresenta o formato parabólico característico de um escoamento laminar, como mostra a figura abaixo.
+É possível observar pelos resultados do contorno de velocidade **Fig. 12**, e o perfil de velocidade **Fig.14** que não há indicíos de um escoamento laminar, uma vez que, o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação, e o perfil de velocidade não apresenta o formato parabólico característico de um escoamento laminar, como mostra a figura abaixo.
 
  <p align="center">
   <img width="250" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil%20laminar.png">
@@ -350,7 +350,7 @@ Abaixo, o estudo parmétrico do problema:
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/estudo_parametrico_1.png">
 </p> 
 <p align="center">
-  <b>Figura 17- Estudo paramétrico velocidade máxima e perda de carga</b>
+  <b>Figura 17- Estudo paramétrico </b>
 </p>
 
 É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, já que a velocidade máxima em todas as variáveis não foi o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordado com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média da tubulação. 
