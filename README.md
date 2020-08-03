@@ -262,6 +262,8 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   Então,
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds_result.gif)
+  
+  **-Você pode analisar aqui o problema de se determinar escoamento laminar no fluent quando o Reynolds não é laminar, e a influência disto para o cálculo da velocidade média e do fator de atrito. Todas as fórmulas são para escoamento laminar e seu Reynolds não garante escoamento laminar. Disserte sobre esta situação em específico**
  
   **# Perda de Carga**
   
@@ -290,6 +292,8 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   <b>Figura 12 - contorno de velocidade</b>
 </p>
 
+
+**Fale aqui sobre o comportamento da pressão. Ela cai ou aumenta? O resultado é consistente com a realidade física do escoamento?**
   
   <p align="center">
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perdadecargal.png">
@@ -306,6 +310,7 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   <b>Figura 14- Perfil de Velocidade</b>
 </p>
 
+**Fale aqui sobre o comportamento da velocidade. Ela cai ou aumenta? O resultado é consistente com a realidade física do escoamento? é possível observar se o escoamento é plenamente desenvolvido?**
   
 ### 4.2 Discussão 
 
