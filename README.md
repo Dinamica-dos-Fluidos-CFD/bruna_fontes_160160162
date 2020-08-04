@@ -245,11 +245,6 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
  <b> Figura 10 - Convergência residual a 1e-6 </b>
   </p>
   
-  ### 3.2 Pós-Processamento
-  
-  A fim de validar os resultados qualitativos e quantitativos das simulações, os seguintes cálculos teóricos foram realizados: 
-  
-
   
   ### 3.3 Resultados e Discussão 
   
