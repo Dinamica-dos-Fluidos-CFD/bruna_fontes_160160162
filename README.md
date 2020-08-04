@@ -224,7 +224,7 @@ Os recursos computacionais disponíveis para a realização da simulação encon
 Por fim, de acordo com os recursos computacionais, é previsto que o processamento seja realizado em um período de uma semana e que, após revisões, a etapa de pré-processamento e processamento seja concluída em um total de duas semanas.
 
 
-## 3. Processamento Laminar
+## 3. Processamento e Pós-Processamento Laminar
 
 
 ### 3.1 Convergência 
@@ -245,13 +245,34 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
  <b> Figura 10 - Convergência residual a 1e-6 </b>
   </p>
   
-  ## 4. Pós-Processamento Laminar
+  ### 3.2 Pós-Processamento
   
-  A fim de avaliar os resultados qualitativos e quantitativos das simulações, os seguintes cálculos teóricos serão realizados: 
+  A fim de validar os resultados qualitativos e quantitativos das simulações, os seguintes cálculos teóricos foram realizados: 
   
+
+  
+  ### 3.3 Resultados e Discussão 
+  
+  
+  <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/quedapressao.jpg">
+</p> 
+<p align="center">
+  <b>Figura 11 - gradiente de pressão</b>
+</p>
+
+ <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perdadecargal.png">
+</p> 
+<p align="center">
+  <b>Figura 12 - Perda de Carga</b>
+</p>
+
+Afim de validar os resultados da queda de pressão fornecido pela simulação serão realizados os seguintes cálculos teóricos:
+
   **# Número de Reynolds**
   
-  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds.gif)  
+  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds.gif)  (1)
   
   Sendo,
   
@@ -262,47 +283,37 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   Então,
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds_result.gif)
-  
-  **-Você pode analisar aqui o problema de se determinar escoamento laminar no fluent quando o Reynolds não é laminar, e a influência disto para o cálculo da velocidade média e do fator de atrito. Todas as fórmulas são para escoamento laminar e seu Reynolds não garante escoamento laminar. Disserte sobre esta situação em específico**
  
   **# Perda de Carga**
   
  Para o cálculo da perda de carga deve ser calculado o fator de atrito
  
- ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_atrito_laminar.gif)
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_atrito_laminar.gif) (2)
  
  Assim, 
  
- ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/queda_pressao_laminar.gif)
+ ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/queda_pressao_laminar.gif) (3)
  
-  
-  ### 4.1 Resultados das Simulações
-  
-  <p align="center">
-  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/quedapressao.jpg">
-</p> 
-<p align="center">
-  <b>Figura 11 - contorno de pressão</b>
-</p>
+ 
+|Perda de Carga   | (Pa)               |
+|-----------------|--------------------|
+| Fornecida       |    2.0             |
+| Teórica Laminar |    1.34            |
+| Simulação       |    2.69            |
+ 
+
+Dessa forma, é possível visualizar que os resultados teórico para o modelo laminar, e da simulação apresentam uma discordância igual a 100,75%. Sendo maior que a margem de erro aceitável de 10%.
+
+Faz-se  necessário então analisar a velocidade do escoamento
 
  <p align="center">
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/velocity.png">
 </p> 
 <p align="center">
-  <b>Figura 12 - contorno de velocidade</b>
+  <b>Figura 13 - gradiente de velocidade</b>
 </p>
 
-
-**Fale aqui sobre o comportamento da pressão. Ela cai ou aumenta? O resultado é consistente com a realidade física do escoamento?**
   
-  <p align="center">
-  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perdadecargal.png">
-</p> 
-<p align="center">
-  <b>Figura 13 - Perda de Carga</b>
-</p>
-
-   
   <p align="center">
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfeilvel.png">
 </p> 
@@ -310,53 +321,50 @@ Primeiramente, foi definido o critério de convergência residual de 1e-4, obten
   <b>Figura 14- Perfil de Velocidade</b>
 </p>
 
-**Fale aqui sobre o comportamento da velocidade. Ela cai ou aumenta? O resultado é consistente com a realidade física do escoamento? é possível observar se o escoamento é plenamente desenvolvido?**
-  
-### 4.2 Discussão 
+Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
 
-  
-É possível observar pelos resultados do contorno de velocidade **Fig. 12**, e o perfil de velocidade **Fig.14** que não há indicíos de um escoamento laminar, uma vez que, o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação, e o perfil de velocidade não apresenta o formato parabólico característico de um escoamento laminar, como mostra a figura abaixo.
 
  <p align="center">
   <img width="250" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil%20laminar.png">
 </p> 
 <p align="center">
-  <b>Figura 15- Perfil de Velocidade escoamento laminar</b>
+  <b>Figura 15- Perfil de Velocidade no escoamento laminar</b>
 </p>
 
-Na imagem abaixo é possível verificar que o perfil de velocidade do problema se assemelha ao perfil de um escoamento turbulento, onde os gradientes de velocidade na região da parede são maiores, semelhante ao formato de um chapéu.
+Na imagem abaixo é possível verificar que o perfil de velocidade do problema se assemelha ao perfil de um escoamento turbulento, onde os gradientes de velocidade na região da parede são maiores, e o gradiente mais baixo na região central, semelhante ao formato de um chapéu.
 
  <p align="center">
   <img width="300" height="180" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil_turbulento.png">
 </p> 
 <p align="center">
-  <b>Figura 16- Perfil de Velocidade escoamento turbulento</b>
+  <b>Figura 16- Perfil de Velocidade no escoamento turbulento</b>
 </p>
 
-
-Ainda, é possível visualizar uma discordância nos resultados de perda de carga da simulação igual a 100,75% em comparação ao resultado teórico para o escoamento laminar, sendo um erro maior que a margem aceitável de 10%. 
-
-|Perda de Carga   | (Pa)               |
-|-----------------|--------------------|
-| Fornecida       |    2.0             |
-| Teórica Laminar |    1.34            |
-| Simulação       |    2.69            |
-
-Foi realizado o estudo parametrico da velocidade máxima, a fim de, avaliar se a teoria sobre o escoamento laminar condiz com o problema analisado. E também, para verificar o comportamento da velocidade do escoamento e da perda de carga.
-
-A seguinte relação da velocidade máxima deve ser verificada para o escoamento laminar, para perfis parabólicos:
-
-
-![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_velocidade_maxima.gif)
-
-
-Abaixo, o estudo parmétrico do problema:
+  
+  ### Estudo Paramétrico
+  
+  Foi efetuado um estudo paramétrico a fim de validar os resultados da simulação com a teoria sobre o escoamento laminar. Aqui foram analisados a velocidade máxima do escoamento, a velocidade média e o comportamento da perda de carga da tubulação.
+  
+  Abaixo, o estudo paramétrico do problema:
 <p align="center">
   <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/estudo_parametrico_1.png">
 </p> 
 <p align="center">
   <b>Figura 17- Estudo paramétrico </b>
 </p>
+  
+
+
+Para verificar o estudo da velocidade máxima no escoamento laminar, a relação abaixo deve ser satisfeita. Essa relação ocorre por consequencia do perfil parabólico do escoamento laminar visto na **Figura 15** 
+
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_velocidade_maxima.gif) (4)
+
+
+
+
+
+
 
 É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, visto que a velocidade máxima em todas as variáveis não apresentou o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordada com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média na tubulação. 
 
@@ -373,6 +381,8 @@ De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tu
 
 
 Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo em transição. 
+
+**EDITANDO AINDA*
 
 ## Processamento Turbulento
 
