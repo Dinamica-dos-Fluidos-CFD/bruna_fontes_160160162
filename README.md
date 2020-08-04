@@ -278,6 +278,8 @@ Afim de validar os resultados da queda de pressão fornecido pela simulação se
   Então,
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds_result.gif)
+  
+  **editar aqui**
  
   **# Perda de Carga**
   
@@ -317,6 +319,8 @@ Faz-se  necessário então analisar a velocidade do escoamento
 </p>
 
 Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
+
+**Editar aqui**
 
 
  <p align="center">
@@ -377,7 +381,7 @@ De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tu
 
 Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo em transição. 
 
-**EDITANDO AINDA*
+**EDITANDO AINDA**
 
 ## Processamento Turbulento
 
