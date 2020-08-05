@@ -320,7 +320,7 @@ Faz-se  necessário então analisar a velocidade do escoamento
   <b>Figura 14- Perfil de Velocidade</b>
 </p>
 
-Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível ver que o contato com o tubo faz com que a velocidade nas bordas seja menor como é previsto pela teoria visto que a velocidade na região de contato é zero, mas pode-se observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
+Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível ver que o contato com o tubo faz com que a velocidade nas bordas seja menor como é previsto pela teoria, visto que, a velocidade na região de contato é zero, mas pode-se observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
 
 
  <p align="center">
