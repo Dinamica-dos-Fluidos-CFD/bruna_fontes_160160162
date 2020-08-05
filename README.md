@@ -279,7 +279,6 @@ Afim de validar os resultados da queda de pressão fornecido pela simulação se
   
   ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/reynolds_result.gif)
   
-  **editar aqui**
  
   **# Perda de Carga**
   
@@ -290,6 +289,9 @@ Afim de validar os resultados da queda de pressão fornecido pela simulação se
  Assim, 
  
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/queda_pressao_laminar.gif) (3)
+ 
+ Previamente, pelo número de Reynolds calculado acima, o escoamento seria considerado em transição de acordo com a teoria. Contudo, devido as considerações feitas na modelagem do problema, foi considerado ainda o modelo laminar para a análise dos resultados. Dessa forma, é confirmado que os resultados no Fluent não demostrem a realidade do problema, visto que, numericamente o modelo laminar não capturaria os efeitos turbulentos do escoamento. De qualquer forma, é possível ver que a queda de pressão consiste com a teoria do escoamento viscoso, visto que o contato com a parede da tubulação faz com que ocorra a perda de carga como mostrado na **Figura 12**.
+
  
  
 |Perda de Carga   | (Pa)               |
@@ -318,9 +320,7 @@ Faz-se  necessário então analisar a velocidade do escoamento
   <b>Figura 14- Perfil de Velocidade</b>
 </p>
 
-Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
-
-**Editar aqui**
+Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível ver que o contato com o tubo faz com que a velocidade nas bordas seja menor como é previsto pela teoria visto que a velocidade na região de contato é zero, mas pode-se observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
 
 
  <p align="center">
@@ -358,11 +358,6 @@ Para verificar o estudo da velocidade máxima no escoamento laminar, a relação
 
 
 ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/eq_velocidade_maxima.gif) (4)
-
-
-
-
-
 
 
 É possível verificar que a relação da velocidade máxima com a velocidade média não condiz com o equacionamento apresentado acima válido para o escoamento laminar, visto que a velocidade máxima em todas as variáveis não apresentou o dobro da velocidade média do escoamento. E Também, foi observado que a queda de pressão da tubulação só pode ser concordada com o valor fornecido no  problema (2 Pa) se houver a redução da velocidade média na tubulação. 
