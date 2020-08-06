@@ -378,7 +378,24 @@ Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado,
 
 **EDITANDO AINDA**
 
-## Processamento e Pós-Processamento Turbulento 
+## 4. Processamento e Pós-Processamento Turbulento 
+
+Como citado anteriormente, o escoamento encontra-se na região de transição. Para tal, será adotado no processamentodo fluent o modelo de turbulência K-epsilon. Abaixo é possível ver a convergência residual de 1e-6 adotada anteriormente. 
+
+
+<p align="center">
+  <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo_turbulento.jpg">
+</p> 
+<p align="center">
+ <b> Figura 1 - Convergência residual a 1e-6 </b>
+  </p>
+  
+  
+  ### 3.1 Resultados e Discussão 
+  
+  
+
+
 
 
 
