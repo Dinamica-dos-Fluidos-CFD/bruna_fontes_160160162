@@ -290,7 +290,7 @@ Afim de validar os resultados da queda de pressão fornecido pela simulação se
  
  ![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/queda_pressao_laminar.gif) (3)
  
- Previamente, pelo número de Reynolds calculado acima, o escoamento seria considerado em transição de acordo com a teoria. Contudo, devido as considerações feitas na modelagem do problema, foi considerado ainda o modelo laminar para a análise dos resultados. Dessa forma, é confirmado que os resultados no Fluent não demostrem a realidade do problema, visto que, numericamente o modelo laminar não capturaria os efeitos turbulentos do escoamento. De qualquer forma, é possível ver que a queda de pressão consiste com a teoria do escoamento viscoso, visto que o contato com a parede da tubulação faz com que ocorra a perda de carga como mostrado na **Figura 12**.
+ Previamente, pelo número de Reynolds calculado acima, o escoamento seria considerado em transição de acordo com a teoria. Contudo, devido as considerações feitas na modelagem do problema, foi considerado ainda o modelo laminar para a análise dos resultados. Dessa forma, é confirmado que os resultados no Fluent não demostrem a realidade do problema, visto que, numericamente o modelo laminar não capturaria os efeitos turbulentos do escoamento. De qualquer forma, é possível ver que a queda de pressão consiste com a teoria do escoamento viscoso, visto que o contato com a parede da tubulação faz com que ocorra a queda da pressão linearmente como mostrado na **Figura 12**.
 
  
  
@@ -320,7 +320,7 @@ Faz-se  necessário então analisar a velocidade do escoamento
   <b>Figura 14- Perfil de Velocidade</b>
 </p>
 
-Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível ver que o contato com o tubo faz com que a velocidade nas bordas seja menor como é previsto pela teoria, visto que, a velocidade na região de contato é zero, mas pode-se observar que não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
+Analisando o gradiente de velocidade na **Figura 13** pode-se observar que o escoamento encontra-se plenamente desenvolvido antes da metade da tubulação. Já pelo perfil de velocidade da **Figura 14** é possível ver que o contato com o tubo faz com que a velocidade nas bordas seja retardada, e o escoamento na região cental acelerado para manter o requisito de continuidade incompressível. Observa-se que apesar da velocidade na região de contato é zero, mas não ocorre o formato parabólico como é esperado em um escoamento laminar. A figura abaixo mostra o perfil parabólico representativo do escoamento laminar 
 
 
  <p align="center">
@@ -386,17 +386,64 @@ Como citado anteriormente, o escoamento encontra-se na região de transição. P
   <img width="470" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo_turbulento.jpg">
 </p> 
 <p align="center">
- <b> Figura 1 - Convergência residual a 1e-6 </b>
+ <b> Figura 17 - Convergência residual a 1e-6 </b>
   </p>
   
   
   ### 3.1 Resultados e Discussão 
   
-  
+
+Para o caso turbulento novos cálculos foram feitos. Para determinar o fator de atrito foi utilizado o Diagrama de Moody, usando como referência a linha que indica tubos lisos em conjunto com o número de reynolds calculado de aproximadamente 3500. Abaixo o fator de atrito:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/fator_de_atrito.gif)
+
+Já estabelecido o fator de atrito pode-se calcular a perda de carga:
+
+![](https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perda_de_carga_turb.gif)
+
+
+ <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/pressao_turbulento.jpg">
+</p> 
+<p align="center">
+  <b>Figura 18- Gradiente de pressão </b>
+</p>
+
+
+<p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perda_de_carga_turb.png">
+</p> 
+<p align="center">
+  <b>Figura 19- Perfil da Perda de Carga </b>
+</p>
+
+O resultado da queda de pressão de 3,40 Pa apresenta coerência, com uma diferencia do valor teórico de apenas 7,6% o que está dentro do erro percentual aceitado para um projeto CFD. O comportamento da queda de pressão também apresenta coerência com o esperado para escoamentos viscosos como dito anteriormente.
+
+
+  <p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/velocidade_turbulento.jpg">
+</p> 
+<p align="center">
+  <b>Figura 20- Gradiente de Velocidade</b>
+</p>
+
+<p align="center">
+  <img width="500" height="300" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/perfil_vel_turb.png">
+</p> 
+<p align="center">
+  <b>Figura 21- Perfil da Velocidade </b>
+</p>
+
+
+É possível ver pela figura **Figura 20** que a velocidade se desenvolve já no início da tubulação o que é esperado para um modelo turbulento. Dessa forma, é possível concluir que é correto utilizar o modelo turbulento em casos em que o escoamento apresentam o número de Reynolds maior que 2300.
+
+## Conclusão
+
+Conforme as análises anteriores, utilizando o software Ansys Fluent para o estudo do escoamento de água numa tubulação. Comparando os valores experimentais com os valores teóricos e numéricos é possível observar que existe a incoerência do valor da queda de pressão apresentado pelo problema, apontando assim, um erro no instrumento de medição, ou estrutural da tubulação.
+Além disso, é possível concluir que o estudo paramétrico é essencial para conferir problemas, e também, possíveis otimizações. Sendo assim, um grande aliado para bons resultados no estudo CFD. Assim, os objetivos gerais do projeto e seus requisistos proprostos foram atendidos, mostrando como o CFD é uma ótima ferramenta para estudos da engenharia.
 
 
 
-**EDITANDO AINDA**
 
 
 
