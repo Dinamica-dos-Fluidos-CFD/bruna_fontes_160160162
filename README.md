@@ -376,7 +376,6 @@ De acordo com a discussão exposta acima, e a teoria do escoamento laminar em tu
 
 Dessa maneira, conclui-se que o modelo laminar para o problema não é adequado, sendo necessário um novo processamento considerando o modelo em transição. 
 
-**EDITANDO AINDA**
 
 ## 4. Processamento e Pós-Processamento Turbulento 
 
@@ -397,6 +396,7 @@ Como citado anteriormente, o escoamento encontra-se na região de transição. P
 
 
 
+**EDITANDO AINDA**
 
 
 
