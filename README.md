@@ -439,8 +439,9 @@ O resultado da queda de pressão de 3,40 Pa apresenta coerência, com uma difere
 
 ## Conclusão
 
-Conforme as análises anteriores, utilizando o software Ansys Fluent para o estudo do escoamento de água numa tubulação. Comparando os valores experimentais com os valores teóricos e numéricos é possível observar que existe a incoerência do valor da queda de pressão apresentado pelo problema, apontando assim, um erro no instrumento de medição, ou estrutural da tubulação.
-Além disso, é possível concluir que o estudo paramétrico é essencial para conferir problemas, e também, possíveis otimizações. Sendo assim, um grande aliado para bons resultados no estudo CFD. Assim, os objetivos gerais do projeto e seus requisistos proprostos foram atendidos, mostrando como o CFD é uma ótima ferramenta para estudos da engenharia.
+Conforme as análises anteriores utilizando o software Ansys Fluent para o estudo do escoamento de um fluido em uma tubulação, é possível inferir que o estudo paramétrico é essencial para obtenção de resultados condizentes a realidade física/teórica do problema. Pelo estudo da velocidade máxima foi possível concluir a necessidade de usar o regime turbulento em escoamentos em transição, e que a simplificação para regime laminar não contribuiria rigorosamente para resultados numéricos esperados pelo CFD.
+
+Ademais, analisando a equação da perda de carga pode-se constatar um possível problema associado ao tempo de uso da tubulação, ou aos equipamentos de medição, que estariam contribuindo para resultado experimental da perda de carga, e da vazão apresentado pelo problema. Assim, os objetivos gerais do projeto e seus requisistos proprostos foram atendidos, mostrando como o CFD é uma ótima ferramenta para estudos da engenharia.
 
 
 
