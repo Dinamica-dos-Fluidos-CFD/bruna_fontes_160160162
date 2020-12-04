@@ -18,7 +18,7 @@ A maior dificuldade da simulação consiste na geração de uma malha que atenda
 </p>
 
 <p align="center">
-  <img width="530" height="350" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/malha_aorta_2.png">
+  <img width="300" height="120" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/malha_aorta_2.png">
 </p>
 
 ### Pré-processamento
