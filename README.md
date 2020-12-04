@@ -1,3 +1,60 @@
+## Desafio Aorta
+
+### Geometria 
+
+O desafio compreende a simulação do escoamento do sangue em uma aorta para validar o gradiente de pressão. A geometria fornecida pelo problema, requer um ajuste para fins de simplificação da simulação. Primeiramente, no SpaceClaim a geometria foram utilizadas 2 ferramentas para suavizar a geometria e diminuir o número de faces sendo elas: Reduce -> Shrinkwrap. Após sua simplificação, utilizou-se a ferramenta Facets para converter a geometria para sólido, além da ferramenta Merge faces que foi utilizada na entrada e saídas da aortas, eliminando diversas faces para facilitar a seleção no setup. 
+
+<p align="center">
+  <img width="550" height="370" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/geometria%20aorta.png">
+</p>
+
+
+## Malha 
+
+A maior dificuldade da simulação consiste na geração de uma malha que atenda aos requisistos de qualidade, além de acordar com os recusos computacionais Disponíveis. Para tal, foram utilizados o seguintes metodos de geração: Virtual topology -> Patch conforming method. Ainda assim, pelos métodos utilizados, não foi possível obter um bom resultado de dissemetria. 
+
+<p align="center">
+  <img width="550" height="370" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/malha_aorta_1.png">
+</p>
+
+<p align="center">
+  <img width="530" height="350" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/malha_aorta_2.png">
+</p>
+
+### Pré-processamento
+
+Para o pré processamento não foi considerada o modelo transiente, nem efeitos visosos ou tranferência de calor. Para o escoamento, foi adotado o modelo de turbulência K-epsilon RNG, onde as equações de navier-stokes são normalizadas considerando efeitos de movimento menores, além de considerar baixos núumeros de Reynolds, sendo adequado para o sangue, visto, que é um fluido não newtoniano. O número de resíduos utilidados de foi de 10^-4, e o sangue foi modelado conforme a figura abaixo.
+
+
+<p align="center">
+  <img width="530" height="350" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/blood.png">
+</p>
+
+
+As condições de contorno para a entrada foi usado a velocidade de 0,35 m/s e pressão manométrica na entrada de 0 Pa, e na saída foi adotado a pressão manométrica de 1300 Pa. Tais configurações não resultaram resíduos de convergência satisfatório. E a simulação convergiu quando os resíduos atingiram valores a ordem de 10^-2.
+
+<p align="center">
+  <img width="570" height="350" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/residuo_aorta.png">
+</p>
+ 
+
+### Pós processamento
+
+O gradiente de pressão estática mostrou a queda de pressão ao longo da aorta, tal comportamento condiz ao esperado para escoamentos internos. A pressão arterial média é de 120 mmHg (16 kPa) durante a fase sistólica, entretando a pressão média simulada resultou em de 1,79 kPa. Os resultados da simulação não foram satisfatórios devido aos recursos computacionais limitados, mas a simulação mostra coerência com fenomeno fisico em questão.
+
+
+<p align="center">
+  <img width="570" height="350" src="https://github.com/Dinamica-dos-Fluidos-CFD/bruna_fontes_160160162/blob/master/resultado_aorta.png">
+</p>
+
+### Conclusão 
+
+ Devido aos recursos computacionais disponíveis a simulação apresentou valores destoando com a realidade, tal questão se deve a malha empregada no modelo 3D. Para bons resultados um estudo com malhas mais refinadas deve ser realizado. Por se tratar de uma simulação de alta complexidade bons rescursos computacionais são de extrema valia. Porém o problema estudado cumpriu com sua função de desafiar novas possibilidades da dinâmica dos fluidos para além dos estudos relacionados a engenharia. 
+ 
+
+
+
+
 # bruna_fontes_160160162 TRABALHO ENCERRADO
 problema 1- substituir nota do laboratório.
 
